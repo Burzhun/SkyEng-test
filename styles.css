@@ -1,0 +1,142 @@
+*{
+   margin:0;
+   padding:0;
+}
+body{
+	background-color:#85a5d4;
+	margin:0;
+   padding:0;
+   font-family: Roboto;
+}
+.layer{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #80808054;
+	display:none;
+}
+.element_popup{
+	position: fixed;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 100;
+	min-width: 400px;
+	display:none;
+}
+.element_popup .popup_top{
+	margin-top: 20px;
+	position:relative;
+}
+
+.element_popup .close_icon{
+	width: 12px;
+    margin: 0 11px;
+    position: absolute;
+    right: 10px;
+	cursor:pointer
+}
+.element_popup .button_container {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.content{
+	width:100%;
+	height:100%;
+	padding-top:100px;
+	text-align:center;
+	z-index: 1;
+}
+.container{
+	background-color:#ffffff;
+	margin: 0 30px;
+	display:inline-block;
+	padding: 0 30px;
+}
+.element{
+	display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-top: 30px;
+    max-width: 100%;
+    cursor: pointer;
+    padding-top: 25px;
+	padding-bottom: 10px;
+}
+.element_popup .element{
+	margin-top: 10px;
+}
+.content .element:hover{
+	background-color:#f5f4f6;
+}
+.element .icon{
+	height:60px;
+}
+.element .icon img{
+	height:60px;
+}
+.element .title{
+	color: #5572d7;
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 45px;
+	margin-bottom: 25px;
+    letter-spacing: 4px;
+}
+.element .description{	
+    color: #a8b1bf;
+    max-width: 208px;
+    font-size: 13px;
+    margin: 0 auto;
+	margin-bottom: 25px;
+	line-height: 18px;
+}
+.price{
+	color:#5572d6;
+}
+.price:before {
+    content: '$';
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    font-weight: bold;
+    display: inline-block;
+}
+.price .amount{
+	font-size: 27px;
+    font-weight: 500;
+}
+.price .slash{
+	margin:0 3px;
+}
+@media (max-width: 800px){
+	.container{
+		max-width: 350px;
+	}
+}
+@media (max-width: 540px){
+	.content{
+		
+	}
+	.container{
+		margin: 0 10%;
+		width: 80%;
+		padding: 0;
+	}
+}
+.feedback_button{
+	background-color: #2b59ff;
+    border: none;
+    color: white;
+    padding: 9px 33px;
+    border-radius: 4px;
+    font-size: 13px;
+	cursor:pointer;
+}
+.container .button_container{
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
