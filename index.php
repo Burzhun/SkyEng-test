@@ -22,8 +22,6 @@ class LongInt{
 		$longint1 = new LongInt($string1);
 		$longint2 = new LongInt($string2);
 		$new_length = max($longint1->length,$longint2->length)+1;
-		//$longint1->addzero($new_length-$longint1->length);
-		//$longint2->addzero($new_length-$longint2->length);
 		$result='';
 		$new_numbers=[];
 		$ost=0;
